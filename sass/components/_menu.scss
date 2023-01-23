@@ -1,0 +1,115 @@
+.burger{
+    display: block;
+   margin: 0; 
+   padding: 0;
+    fill: var(--color-title);
+    background: none;
+    border: none;  
+    position: absolute;
+    top: 10px;
+    right: 10px;
+
+   
+    @media (min-width: 768px)
+    {
+       display:none ; 
+       
+    }
+
+    &__open:hover
+    {
+        fill: var(--color-logo);
+    }
+}
+   
+
+
+
+ 
+ .menu{
+   
+    position: fixed;  
+    top: 0;  
+    left: 0;
+    width: 100%;
+    transform: translateX(-100%);
+    background: var(--color-button);
+    overflow: scroll;
+    
+
+    &__burger{
+           margin: 0; 
+           padding: 0;
+            fill: var(--color-title);
+            background: none;
+            border: none;  
+            position: absolute;
+            top: 10px;
+            right: 10px;
+    }
+
+    &__burger:hover
+    {
+        fill: var(--color-logo);
+    }
+    
+    &.is-open{
+        transform: translateX(0);
+     padding: 48px 40px;
+    }
+    &__list{
+        display: block;
+        padding: 0;
+        
+    }
+    &__link{
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 1.175;
+        letter-spacing: 0.02em;
+        color: var(--color-title);
+        margin-bottom: 30px;
+    }
+    &__link:last-child {
+        margin-bottom: 0;
+        }
+    &__link:hover{
+        color: var(--color-logo);
+    }
+    &__contact{
+        margin-top: 300px;
+    }
+    &__contact-link{
+font-weight: 500;
+font-size: 34px;
+line-height: 1.176;
+letter-spacing: 0.02em;
+color: var(--color-logo);
+margin-bottom: 30px;
+    }
+
+&__contact-item{
+    
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.167;
+    letter-spacing: 0.02em;
+    color: var(--color-ligt);
+}
+
+&__social{
+    display: flex;
+    margin-top: 64px;
+    gap: 20px;
+}
+&__social-link{
+font-weight: 500;
+font-size: 18px;
+line-height: 1.222;
+letter-spacing: 0.02em;
+color: var(--color-logo);
+}
+    
+ }
+
+ 
