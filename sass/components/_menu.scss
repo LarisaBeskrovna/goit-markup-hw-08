@@ -21,11 +21,7 @@
         fill: var(--color-logo);
     }
 }
-   
-
-
-
- 
+    
  .menu{
    
     position: fixed;  
@@ -34,7 +30,7 @@
     width: 100%;
     transform: translateX(-100%);
     background: var(--color-button);
-    overflow: scroll;
+    overflow-y: scroll;
     
 
     &__burger{
@@ -111,5 +107,7 @@ color: var(--color-logo);
 }
     
  }
+
+ 
 
  

@@ -52,12 +52,13 @@
         position: relative;
         overflow: hidden;
     }
-    &__img:hover+
+   
+    
+}
+ .portfolio-card__link:hover
     .list-overlay
 {
     transform: translateY(0);
-}
-    
 }
 
 
