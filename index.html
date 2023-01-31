@@ -31,7 +31,7 @@
         <div class="contact"> 
           <ul class="contact__list">
             <li>
-              <a href="mailto:info@devstudio.com" class="contact__link"> <svg class="contact__icon"> 
+              <a href="mailto:info@devstudio.com" class="contact__link contact__link-indent"> <svg class="contact__icon"> 
                 <use href="./images/svg/icons.svg#icon-envelope">
                 </use>
               </svg> info@devstudio.com  </a>
@@ -50,13 +50,11 @@
   <main>
     <section class="section-aside">
       <div class="container">
-      <div class="modal-box">
         <h1 class="modal-box__title">Ефективні рішення для вашого бізнесу</h1>
         <button type="button" class="button" data-modal-open>Замовити послугу</button>   
       </div>
-      </div>
       </section>
-    <section class="section">
+    <section class="section-icon">
       <div class="container"> 
         <ul class="aside">
           <li class="aside__link">
@@ -131,7 +129,7 @@
     </section>
     <section class="section-name">
       <div class="container-name">
-        <h3 class="title-name">Наша команда</h3>
+        <h2 class="title-name">Наша команда</h2>
           <ul class="card">
             <li class="card__link">
               <picture>
@@ -159,45 +157,47 @@
                  width="270"
                />                
              </picture>
-              
-            <h3 class="card__name">Ігор Дем'яненко</h3>
-            <p class="card__post">Product Designer</p>
-            <div class="social">
-              <ul class="social__list">
-                <li class="social__link">
-                  <a class="social__item" href="#">
-                    <svg class="social__icon" width="20" height="20">
-                      <use href="./images/svg/icons.svg#icon-instagram">
-                      </use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="social__link">
-                  <a class="social__item" href="#">
-                    <svg width="20" height="20">
-                      <use href="./images/svg/icons.svg#icon-twitter">
-                      </use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="social__link">
-                  <a class="social__item" href="#">
-                    <svg class="social-icon-subtite" width="20" height="20">
-                      <use href="./images/svg/icons.svg#icon-facebook">
-                      </use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="social__link">
-                  <a class="social__item" href="#">
-                    <svg class="social-icon-subtite" width="20" height="20">
-                      <use href="./images/svg/icons.svg#icon-linkedin">
-                      </use>
-                    </svg>
-                  </a>
-                </li>
-              </ul>
-            </div>
+              <div class="info">
+                <h3 class="card__name">Ігор Дем'яненко</h3>
+                <p class="card__post">Product Designer</p>
+                <div class="social">
+                  <ul class="social__list">
+                    <li class="social__link">
+                      <a class="social__item" href="#">
+                        <svg class="social__icon" width="20" height="20">
+                          <use href="./images/svg/icons.svg#icon-instagram">
+                          </use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="social__link">
+                      <a class="social__item" href="#">
+                        <svg width="20" height="20">
+                          <use href="./images/svg/icons.svg#icon-twitter">
+                          </use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="social__link">
+                      <a class="social__item" href="#">
+                        <svg class="social-icon-subtite" width="20" height="20">
+                          <use href="./images/svg/icons.svg#icon-facebook">
+                          </use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="social__link">
+                      <a class="social__item" href="#">
+                        <svg class="social-icon-subtite" width="20" height="20">
+                          <use href="./images/svg/icons.svg#icon-linkedin">
+                          </use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+    
             </li>
             <li class="card__link">
               <picture>
@@ -224,6 +224,7 @@
                  alt="жінка посміхається"
                  width="270"/>                
                 </picture>
+                <div class="info">
             <h3 class="card__name">Ольга Рєпіна</h3>
             <p class="card__post">Frontend Developer</p>
             <div class="social">
@@ -262,6 +263,7 @@
                 </li>
               </ul>
             </div>
+          </div>
             </li>
             <li class="card__link">
               <picture>
@@ -288,7 +290,7 @@
                  alt="чоловік дивиться в бік"
                  width="270"/>                
                 </picture>
-              
+                <div class="info">
             <h3 class="card__name">Микола Тарасов</h3>
             <p class="card__post">Marketing</p>
             <div class="social">
@@ -327,6 +329,7 @@
                 </li>
               </ul>
             </div>
+                </div>
             </li>
             <li class="card__link">
               <picture>
@@ -353,7 +356,7 @@
                  alt="чоловік в окулярах і с бородой"
                  width="270"/>                
                 </picture>
-              
+                <div class="info">
             <h3 class="card__name">Михайло Єрмаков</h3>
             <p class="card__post">UI Designer</p>
             <div class="social">
@@ -392,11 +395,12 @@
                 </li>
               </ul>
             </div>
+                </div>
             </li>
           </ul>  
         </div>
     </section>
-    <section class="section">
+    <section class="section-client">
       <div class="container">
         <h3 class="title-client">Постійні клієнти</h3>
         
@@ -474,7 +478,7 @@
       </div>
       
         <div class="social-blok">
-          <h3 class="footer-title"> приєднуйтесь </h3>
+          <p class="footer-title"> приєднуйтесь </p>
           <div class="footer-social">
             <ul class="footer-social__list">
               <li class="footer-social__link">
@@ -514,7 +518,7 @@
           
         </div>
         <div class="email">
-          <h3 class="footer-title">Підпишіться на розсилку</h3>
+          <p class="footer-title">Підпишіться на розсилку</p>
           <div class="email__box">
             <form action="send-mail">
             <input class="email__input"
@@ -557,9 +561,9 @@
 </div>
 <div >
   <ul class="menu__social">
-    <li class="menu__social-link"><a href="#" >Instagram</a></li>
-    <li class="menu__social-link"><a href="#" >Twitter</a></li>
-    <li class="menu__social-link"><a href="#" >Facebook</a></li>
+    <li class="menu__social-link menu__social-link-activ"><a href="#" >Instagram</a></li>
+    <li class="menu__social-link menu__social-link-activ"><a href="#" >Twitter</a></li>
+    <li class="menu__social-link menu__social-link-activ"><a href="#" >Facebook</a></li>
     <li class="menu__social-link"><a href="#" >LinkedIn</a></li>
   </ul>
 </div>
@@ -574,7 +578,7 @@
     <use href="./images/svg/icons.svg#icon-Vector" ></use>
   </svg>
 </button>
-<h2 class="modal__title">Залиште свої дані, ми вам передзвонимо</h2>
+<p class="modal__title">Залиште свої дані, ми вам передзвонимо</p>
 <form name="contact-form" autocomplete="on">
   <label class="form-field-label" for="name">Ім'я</label>
   <div class="form-field">

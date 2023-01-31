@@ -1,6 +1,6 @@
 .header{
     border-bottom: 1px solid #ECECEC;
-    position: relative;
+    
   
     
 
@@ -19,21 +19,12 @@
     display: flex;
     flex-grow: 1;
     align-items: center;
-    padding-top: 25px;
-    padding-bottom: 25px;
-
-    @media (max-width: 767px)
-    {
-        padding: 0;
-       
-    }
-    
+     
     
   &__list{
         list-style-type: none;
         display: none; 
         gap: 50px;
-        padding-left: 95px;
         font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -46,7 +37,7 @@
     {
      
      display: flex;
-     padding-left: 88px;
+     margin-left: 88px;
     }
  
     @media (min-width: 1200px){
@@ -65,7 +56,14 @@
     text-decoration: none;
     list-style-type: none;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    }
+
+
+    @media (min-width: 768px){
+        display: block;
+       padding-top: 32px;
+       padding-bottom: 32px;
+       }
+}
     &__link:hover,
     &__link:focus{
         color: var(--color-logo);
@@ -77,10 +75,15 @@
     }
     &__link-activ{
         position: relative;
-        padding-bottom: 32px;
         color: var(--color-logo);
     text-decoration: none;
     cursor: pointer;
+
+    @media (min-width: 1200px){
+        display: block;
+        padding-top: 32px;
+        padding-bottom: 32px;
+        }
     
     }
    &__link-activ::after{
@@ -101,30 +104,23 @@
     display: flex;
     @media (max-width:767px){
         display: none;       
-    }
-    
-
-
-   
+    }   
     &__list{
 
         @media (min-width: 768px)
         {
             display: block;
-            height: 20px;
-            align-items: center;
-            justify-content: center;
-            margin-right: 10px;
             fill: var(--color-ligt);
             cursor: pointer;
-            gap: 10px;
             transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
             margin: 0;
-            padding: 0;
+            padding: 21px 0;
         }
      
         @media (min-width: 1200px){
             display: flex;
+            gap: 10px;
+            padding: 0;
        
         }
         
@@ -139,18 +135,33 @@
             font-size: 12px;
     line-height: 1.167;
     letter-spacing: 0.02em;
-        margin-bottom: 10px;
+       
         font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     text-decoration: none;
     color: var(--color-ligt);
-    padding-left: 10px;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
- }
+ 
+}
     
     }
+    
+    &__link-indent
+    {
+        @media (min-width: 768px)
+        {
+            margin-bottom: 10px;
+        }
+
+        @media (min-width: 1200px){
+            margin-bottom: 0;
+            
+           }
+        
+    }
+
     &__link:hover,
     &__link:focus
     {
@@ -162,7 +173,7 @@
         width: 30px;
         height: 12px;
        fill: currentColor;
-       padding-right: 10px;
+       margin-right: 10px;
        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
     
