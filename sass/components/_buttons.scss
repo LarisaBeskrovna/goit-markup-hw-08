@@ -120,10 +120,11 @@ display: flex;
 
 @media (min-width: 1200px)
 {
-   position: absolute;
-   margin: 0;
-   right: 30px;
-   top: 119px;
+    margin: 0;
+    margin-left: 12px;
+    display: inline-block;
+    padding-right: 64px;
+  
 
   
 }
@@ -132,11 +133,24 @@ display: flex;
    
    fill: var(--color-button); 
    margin-left: 10px;
+   margin-right: 8px;
    align-items: center;
     justify-content: center;
+
+
+    @media (min-width: 1200px)
+{
+    position: absolute;
+  
+
+  
+}
 }
 
+
+
 }
+
 .button-list{
     
     display: flex;

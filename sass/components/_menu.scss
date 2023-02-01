@@ -21,7 +21,8 @@
 }
     
  .menu{
-    position: fixed;  
+   display: flex;
+    position: absolute;
     top: 0;  
     left: 0;
     width: 100%;
@@ -49,13 +50,14 @@ box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0p
         fill: var(--color-logo);
     }
     
+    
     &.is-open{
         transform: translateX(0);
      padding: 48px 40px;
     }
     &__list{
-        display: block;
-        padding: 0;
+        
+        margin-bottom: auto;
         
     }
     &__link{
@@ -72,9 +74,7 @@ box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0p
     &__link:hover{
         color: var(--color-logo);
     }
-    &__contact{
-        margin-top: 300px;
-    }
+        
     &__contact-link{
 font-weight: 500;
 font-size: 34px;
