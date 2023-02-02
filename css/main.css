@@ -496,7 +496,10 @@ a {
   -webkit-transform: translateX(-100%);
           transform: translateX(-100%);
   background: var(--color-button);
-  overflow-y: scroll;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   background: #FFFFFF;
   -webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
@@ -558,6 +561,8 @@ a {
   margin-top: 64px;
   padding-right: 10px;
   gap: 10px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 .menu__social-link {
   font-weight: 500;
@@ -975,6 +980,8 @@ a {
   height: 400px;
   margin-left: auto;
   margin-right: auto;
+  background-size: cover;
+  background-position: center;
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/Imgfon@1x.jpg);
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Imgfon@1x.jpg);
   padding-top: 118px;
@@ -1192,7 +1199,6 @@ a {
   max-width: 480px;
   padding-left: 15px;
   padding-right: 15px;
-  margin: 0;
   margin-left: auto;
   margin-right: auto;
 }
